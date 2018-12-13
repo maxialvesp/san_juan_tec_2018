@@ -14,7 +14,7 @@
                                     </a>
                                     <div class="media-body">
 
-                                        <h2 class="text-light display-6">Check & Sale</h2>
+                                        <h2 class="text-light display-6">Verduleria</h2>
 
                                     </div>
                                 </div>
@@ -57,81 +57,25 @@
                                     <nav>
                                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
 
-                                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Datos</a>
-                                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Puntuación del local</a>
+                                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Quienes somos?</a>
+                                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Domicilio</a>
                                             
                                         </div>
                                     </nav>
-                                    <div class="tab-content pl-3 pt-2" id="nav-tabContent" align="left ">
+                                    <div class="tab-content pl-3 pt-2" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                            <div class="datos" align="center">
-                                                <p>Domicilio:</p><strong>Av. Libertador Gral. San Martín 1890, Capital, San Juan.</strong>
-                                                <br>
-                                                <br>
-                                                <br>
+                                            <p>Quinta Fresca es un servicio que le brinda la posibilidad de recibir en su casa alimentos especialmente seleccionados.</p>
 
-                                                <p>Horario de atencion al publico:</p><strong>9:00hs a 14:00hs - 18:00 a 22:00hs</strong>
-                                                <br>
-                                                <br>
-                                                <br>
+                                            <p>Le proponemos una alimentación más rica y saludable. Ahorrará tiempo a la hora de comprar y de cocinar, al recibir productos 100% aprovechables, pre-lavados y envasados para su óptima conservación, junto con originales recetas y novedosas formas de preparación.</p> 
 
-                                                <p>Quienes somos?</p>
-                                                <strong>Somos una familia que trabajamos en el rubro de las frutas & verduras hace más de 60 años dedicándonos a la producción, venta mayorista, importación, exportación...
+                                            <p>Desde nuestra propia huerta y a través de una rigurosa selección de proveedores, aseguramos el origen, la frescura y más alta calidad de nuestros productos y procesos de producción, manteniendo la cadena de frío y respetando altos estándares de seguridad e higiene.</p>
 
-                                                    Hoy queremos llegar directamente a cada hogar con alimentos naturales, frescos, de primera calidad y fundamentales en una sana alimentación.
+                                            <p>En Quinta Fresca podrá encontrar verduras recién cosechadas, las mejores frutas cuidadosamente seleccionadas, quesos artesanales elaborados con leche de vaca, cabra y oveja, pollos y huevos de campo, carnes de novillito y cordero envasadas al vacío, jamones, fiambres y embutidos, aceite de oliva y conservas, pastas secas italianas, miel, dulces y frutas secas, vinos premium, flores frescas y plantines de hierbas aromáticas.</p>
 
-                                                    Le Fruit nos mantiene en el camino del crecimiento, con esfuerzo, trabajo y mucho amor propio por lo que hacemos, siguiendo el legado que nos inculco toda su vida Don Bernardo.
-
-                                                    Muchas gracias por elegirnos.
-                                                </strong>
-
-                                            </div>
-
+                                            <p>Conozca nuevos productos y sabores y disfrute de las ventajas de un servicio diferente.</p>
                                         </div>
-                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" >
-
-                                            <div >
-                                                <div>
-                                                    <div class="col-md-3">
-                                                        <i class="ti-star"></i><i class="ti-star"></i><i class="ti-star"></i><i class="ti-star"></i><i class="ti-star"></i>
-                                                    </div>
-                                                    <div class="progress mb-2" style="height: 5px;">
-                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div class="col-md-3">
-                                                        <i class="ti-star"></i><i class="ti-star"></i><i class="ti-star"></i><i class="ti-star"></i>
-                                                    </div>
-                                                    <div class="progress mb-2" style="height: 5px;">
-                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div class="col-md-3">
-                                                        <i class="ti-star"></i><i class="ti-star"></i><i class="ti-star"></i>
-                                                    </div>
-                                                    <div class="progress mb-2" style="height: 5px;">
-                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div class="col-md-3">
-                                                        <i class="ti-star"></i><i class="ti-star"></i>
-                                                    </div>
-                                                    <div class="progress mb-2" style="height: 5px;">
-                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div class="col-md-3">
-                                                        <i class="ti-star"></i>
-                                                    </div>
-                                                    <div class="progress mb-2" style="height: 5px;">
-                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                            <p>Av. Libertador Gral. San Martín 1890, Capital, San Juan.</p>
                                         </div>
                                         
                                     </div>
