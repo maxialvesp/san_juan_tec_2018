@@ -13,7 +13,7 @@
         <li><?= $this->Html->link(__('New User'), ['action' => 'add']) ?> </li>
     </ul>
 </nav>
-<div class="users view large-9 medium-8 columns content">
+<div class="users view large-9 medium-8 columns content" ng-controller="mainController as vm">
     <h3><?= h($user->name) ?></h3>
     <table class="vertical-table">
         <tr>
@@ -66,3 +66,11 @@
         </tr>
     </table>
 </div>
+<script>
+    var app=angular.module('check_sale');
+    app.controller('mainController',function ($scope) {
+        var vm = this        
+        vm.user=<?= json_encode($user) ?>;
+
+    })
+</script>

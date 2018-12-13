@@ -1,9 +1,12 @@
 
 #nav-tab a{
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 body{
 	background:rgb(94,180,62); 
 }
 
+.media-body{
+	font-family: 'Comic Sans';
+}
