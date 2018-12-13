@@ -40,6 +40,13 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->css('lib/chosen/buttons.bootstrap.min.css') ?>
     <?= $this->Html->css('lib/chosen/buttons.dataTables.min.css') ?>
     <?= $this->Html->css('lib/chosen/jqvmap.min.css') ?>
+    <?= $this->Html->script('https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js');?>
+    <?= $this->Html->script('https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js');?>
+    <?= $this->Html->script('https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js');?>
+    <?= $this->Html->script('https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js');?>
+    <?= $this->Html->script('https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js');?>
+    <?= $this->Html->script('app.js');?>
+    <?= $this->Html->script('main.js');?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
@@ -248,12 +255,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     </div>
     <!-- /#right-panel -->
 
-    <?= $this->Html->script('https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js');?>
-    <?= $this->Html->script('https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js');?>
-    <?= $this->Html->script('https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js');?>
-    <?= $this->Html->script('https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js');?>
-    <?= $this->Html->script('https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js');?>
-    <?= $this->Html->script('app.js');?>
-    <?= $this->Html->script('main.js');?>
+    
 </body>
 </html>
