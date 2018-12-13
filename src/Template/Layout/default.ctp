@@ -16,7 +16,7 @@
 $cakeDescription = 'CakePHP: the rapid development php framework';
 ?>
 <!DOCTYPE html>
-<html>
+<html ng-app="check_sale">
 <head>
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -252,6 +252,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->script('https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js');?>
     <?= $this->Html->script('https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js');?>
     <?= $this->Html->script('https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js');?>
+    <?= $this->Html->script('https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js');?>
+    <?= $this->Html->script('app.js');?>
     <?= $this->Html->script('main.js');?>
 </body>
 </html>
