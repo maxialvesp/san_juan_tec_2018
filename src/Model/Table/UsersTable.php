@@ -9,8 +9,6 @@ use Cake\Validation\Validator;
 /**
  * Users Model
  *
- * @property \App\Model\Table\StoresTable|\Cake\ORM\Association\BelongsTo $Stores
- *
  * @method \App\Model\Entity\User get($primaryKey, $options = [])
  * @method \App\Model\Entity\User newEntity($data = null, array $options = [])
  * @method \App\Model\Entity\User[] newEntities(array $data, array $options = [])
@@ -19,8 +17,6 @@ use Cake\Validation\Validator;
  * @method \App\Model\Entity\User patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
  * @method \App\Model\Entity\User[] patchEntities($entities, array $data, array $options = [])
  * @method \App\Model\Entity\User findOrCreate($search, callable $callback = null, $options = [])
- *
- * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
 class UsersTable extends Table
 {
@@ -38,13 +34,6 @@ class UsersTable extends Table
         $this->setTable('users');
         $this->setDisplayField('name');
         $this->setPrimaryKey('id');
-
-        $this->addBehavior('Timestamp');
-
-        $this->belongsTo('Stores', [
-            'foreignKey' => 'store_id',
-            'joinType' => 'INNER'
-        ]);
     }
 
     /**
@@ -56,24 +45,24 @@ class UsersTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->integer('id')
-            ->allowEmpty('id', 'create');
+            ->integer('id_user')
+            ->allowEmpty('id_user', 'create');
 
         $validator
             ->scalar('username')
-            ->maxLength('username', 50)
+            ->maxLength('username', 100)
             ->requirePresence('username', 'create')
             ->notEmpty('username');
 
         $validator
             ->scalar('password')
-            ->maxLength('password', 200)
+            ->maxLength('password', 100)
             ->requirePresence('password', 'create')
             ->notEmpty('password');
 
         $validator
             ->scalar('name')
-            ->maxLength('name', 50)
+            ->maxLength('name', 100)
             ->requirePresence('name', 'create')
             ->notEmpty('name');
 
@@ -83,6 +72,12 @@ class UsersTable extends Table
             ->notEmpty('birthdate');
 
         $validator
+            ->scalar('phone')
+            ->maxLength('phone', 100)
+            ->requirePresence('phone', 'create')
+            ->notEmpty('phone');
+
+        $validator
             ->scalar('gender')
             ->maxLength('gender', 10)
             ->requirePresence('gender', 'create')
@@ -90,21 +85,9 @@ class UsersTable extends Table
 
         $validator
             ->scalar('role')
-            ->maxLength('role', 20)
+            ->maxLength('role', 15)
             ->requirePresence('role', 'create')
             ->notEmpty('role');
-
-        $validator
-            ->scalar('phone')
-            ->maxLength('phone', 50)
-            ->requirePresence('phone', 'create')
-            ->notEmpty('phone');
-
-        $validator
-            ->scalar('picture')
-            ->maxLength('picture', 250)
-            ->requirePresence('picture', 'create')
-            ->notEmpty('picture');
 
         return $validator;
     }
@@ -119,7 +102,6 @@ class UsersTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->isUnique(['username']));
-        $rules->add($rules->existsIn(['store_id'], 'Stores'));
 
         return $rules;
     }

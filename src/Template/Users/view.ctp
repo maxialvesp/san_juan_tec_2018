@@ -29,6 +29,10 @@
             <td><?= h($user->name) ?></td>
         </tr>
         <tr>
+            <th scope="row"><?= __('Phone') ?></th>
+            <td><?= h($user->phone) ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Gender') ?></th>
             <td><?= h($user->gender) ?></td>
         </tr>
@@ -37,32 +41,12 @@
             <td><?= h($user->role) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Phone') ?></th>
-            <td><?= h($user->phone) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Picture') ?></th>
-            <td><?= h($user->picture) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Id') ?></th>
-            <td><?= $this->Number->format($user->id) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Store Id') ?></th>
-            <td><?= $this->Number->format($user->store_id) ?></td>
+            <th scope="row"><?= __('Id User') ?></th>
+            <td><?= $this->Number->format($user->id_user) ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Birthdate') ?></th>
             <td><?= h($user->birthdate) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Created') ?></th>
-            <td><?= h($user->created) ?></td>
-        </tr>
-        <tr>
-            <th scope="row"><?= __('Modified') ?></th>
-            <td><?= h($user->modified) ?></td>
         </tr>
     </table>
 </div>
